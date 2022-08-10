@@ -23,6 +23,7 @@ https://youtu.be/_NTpVR3EmIg
   * Просмотр логов со всеми вьездами.
   * Активные заявки на добавление новых номеров, получаемые из телеграм бота.
 - В качестве источника сигнала можно использовать любое устройство видеозахвата (ip-камера, веб-камера, видеозапись)
+- Telegram Bot для приема заявок
 
 # Слайды с работой проекта
 ![Иллюстрация к проекту](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_2.png)
@@ -54,6 +55,7 @@ pip install -r requirements_pavel.txt
 [model.zip](https://drive.google.com/drive/folders/1oWJkOWIZlKSHBMND4An9UUTg4jEGXund?usp=sharing) 
 must be downloaded and unzipped in [data](https://github.com/pavelorlovyeah/SKUD_Avto/tree/master/data) folder on local machine
 ![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_1.png)
+
 5. Start project with run.py
 ```bash
 python3 run.py
@@ -67,3 +69,5 @@ python3 run.py
 ```bash
 python3 bot.py
 ```
+ ### Dataset
+ [dataset.zip](https://drive.google.com/drive/folders/1oWJkOWIZlKSHBMND4An9UUTg4jEGXund?usp=sharing) 
