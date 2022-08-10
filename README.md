@@ -25,18 +25,18 @@ https://youtu.be/_NTpVR3EmIg
 - В качестве источника сигнала можно использовать любое устройство видеозахвата (ip-камера, веб-камера, видеозапись)
 
 # Слайды с работой проекта
-![Иллюстрация к проекту](https://github.com/polubarev/SKUD_Avto/blob/main/readme_images/1.png)
+![Иллюстрация к проекту](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_2.png)
 
 ## Архитектура
-![Image alt](https://github.com/polubarev/SKUD_Avto/blob/main/readme_images/2.png)
+![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_3.png)
 
 ## Нейросети
-![Image alt](https://github.com/polubarev/SKUD_Avto/blob/main/readme_images/3.png)
+![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_4.png)
 
 ## Интерфейс
-![Image alt](https://github.com/polubarev/SKUD_Avto/blob/main/readme_images/4.png)
+![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_5.png)
 
-## Installation
+# Installation
 1. Clone Project
 ```bash
 git clone git@github.com:pavelorlovyeah/SKUD_Avto.git
