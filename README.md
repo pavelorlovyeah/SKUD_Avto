@@ -37,7 +37,7 @@ https://youtu.be/_NTpVR3EmIg
 ## Интерфейс
 ![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_5.png)
 
-### Telegram Bot
+## Telegram Bot
 ![Image alt](https://github.com/pavelorlovyeah/SKUD_Avto/blob/master/static/readme/img_8.png)
 
 # Installation
