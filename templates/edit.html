@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Редактирование автомобиля
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed') }}" width="0%">
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <h1>Редактирование автомобиля</h1>
+    <form method="post">
+        <textarea name="plates" id="plates" class="form-control">{{ car.plates }}</textarea><br>
+        <textarea name="fio" id="fio" class="form-control">{{ car.fio }}</textarea><br>
+        <textarea name="room" id="room" class="form-control">{{ car.room }}</textarea><br>
+        <textarea name="phone" id="phone" class="form-control">{{ car.phone }}</textarea><br>
+        <input type="submit" class="btn btn-sucess" formaction="/cars/{{ car.id }}/edit" value="Сохранить изменения">
+    </form>
+</div>
+{% endblock %}

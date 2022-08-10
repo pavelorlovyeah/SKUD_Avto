@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Автомобили
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Автомобили жильцов</h1>
+    {% for element in all_cars %}
+        <div class='alert alert_info'>
+            <h2>{{ element.plates }}</h2>
+            <p>Имя: {{ element.fio }}</p>
+            <p>Адрес: {{ element.room }}</p> 
+            <p>Контактный телефон: {{ element.phone }}</p>
+            <a href="/cars/{{ element.id }}/delete" class="btn btn-danger">Удалить</a>
+            <a href="/cars/{{ element.id }}/edit" class="btn btn-sucess">Редактировать</a>
+        </div>
+    {% endfor %}
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed') }}" width="0%">
+        </div>
+    </div>
+</div>
+{% endblock %}

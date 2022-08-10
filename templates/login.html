@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Авторизация
+{% endblock %}
+
+{% block body %}
+
+<center>
+<div class="container mt-5">
+    <h2>Авторизуйтесь</h2>
+</div>
+<br>
+<form action = "/signin" method = "POST">
+    <p>Введите логин</p>
+    <textarea type = "text" name = "login" rows="1" cols="15" padding="30px"> </textarea>
+    <br>
+    <p>Введите пароль</p>
+    <textarea type = "text" name = "password" rows="1" cols="15" padding="30px" type = "password"> </textarea>
+    <br>
+    <br>
+    <input type = "submit" name="signin" value="Войти"/>
+</form1
+<br>
+<br>
+<br>
+{% if query %}
+<h4>Невернный логин или пароль, попробуйте еще раз.</h4>
+{% endif %}
+
+</center>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed') }}" width="0%">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отчеты
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>История вьездов</h2>
+    {% for log in all_logs%}
+        <div class='alert alert_info'>
+            <h5>Дата и время: {{ log[1] }}</h5>
+            <h5>Госномер: {{ log[0] }}</h5>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed') }}" width="0%">
+        </div>
+    </div>
+</div>
+{% endblock %}

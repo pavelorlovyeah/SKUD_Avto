@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Мониторинг
+{% endblock %}
+
+{% block body %}
+<script type="text/javascript">
+    var intervalID = setInterval(update_values,500);
+    
+        function update_values() {
+            $.getJSON($SCRIPT_ROOT + '/_stuff',
+                   
+            function(data) {
+            $('#query').text(data.query);
+            $('#last_plate').text(data.last_plate);
+            $('#last_date').text(data.last_date);
+            console.log(data)
+            });
+            
+        };
+       
+        function stopTextColor() {
+            clearInterval(intervalID);
+        }
+ </script>
+
+<!-- <div class="container" onload="update_values()";>
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <center>
+            <h2 id="query">Загрузка... </h2>
+            <!-- <h1 class="mt-5">Мониторинг</h1> -->
+            <!-- <img src="{{ url_for('video_feed') }}" width="90%">
+            </center>
+            <script>
+            document.getElementById("query").innerHTML;
+            </script>
+        </div>
+    </div>
+</div> --> 
+
+<br>
+
+<div class="container" allign = "center" onload="update_values();">
+    <div class="row"></div>
+        <div class="col-lg-8  offset-lg-2">
+            <!-- {% if query == "true" %}
+            <button type="button" class="btn btn-success">Шлагбаум открыт</button>
+            {% else %}
+            <button type="button" class="btn btn-danger">Шлагбаум закрыт</button>
+            {% endif %} -->
+            <!-- <center>
+            <h2 id="query">Загрузка... </h2>
+            </center> -->
+            <center>
+            <h2 id="query">Загрузка... </h2>
+            <img src="{{ url_for('video_feed') }}" width="90%">
+            </center>
+            <h3>Последний вьезд:</h3>
+                <!-- <span id="query">Загрузка...</span> -->
+            <p>
+            <h5 id="last_plate">Загрузка...</h5>
+            <h5 id="last_date">Загрузка...</h5>
+            <p>
+            <script>
+            document.getElementById("query").innerHTML;
+            document.getElementById("last_plate").innerHTML;
+            document.getElementById("last_date").innerHTML;
+            </script>
+                <!-- <button onclick="stopTextColor();">Stop</button> -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

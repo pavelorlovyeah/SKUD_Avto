@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление нового автомобиля
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Добавление нового автомобиля</h1>
+    <form method="post">
+        <textarea name="plates" id="plates" class="form-control" placeholder="Введите госномер"></textarea><br>
+        <textarea name="fio" id="fio" class="form-control" placeholder="Введите ФИО владельца"></textarea><br>
+        <textarea name="room" id="room" class="form-control" placeholder="Введите адрес владельца"></textarea><br>
+        <textarea name="phone" id="phone" class="form-control" placeholder="Введите телефон владельца"></textarea><br>
+        <input type="submit" class="btn btn-warning" value="Добавить">
+    </form>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed') }}" width="0%">
+        </div>
+    </div>
+</div>
+{% endblock %}
