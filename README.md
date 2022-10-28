@@ -74,3 +74,9 @@ python3 bot.py
 ```
  ### Dataset
  [dataset.zip](https://drive.google.com/drive/folders/1oWJkOWIZlKSHBMND4An9UUTg4jEGXund?usp=sharing) 
+ 
+ ### The project was developed by:
+- Pavel Orlov https://github.com/pavelorlovyeah
+- Igor Polubarev https://github.com/polubarev
+- Leonid Shturmin
+- Sergei Zhitar https://github.com/Sjitar
